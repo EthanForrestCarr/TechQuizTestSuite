@@ -1,4 +1,4 @@
-import { mount } from 'cypress/react';
+import { mount } from 'cypress/react18';
 import Quiz from '../../client/src/components/Quiz';
 import questions from '../fixtures/questions.json';
 

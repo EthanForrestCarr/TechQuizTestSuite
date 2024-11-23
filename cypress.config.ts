@@ -9,6 +9,7 @@ export default defineConfig({
       viteConfig: customViteConfig,
     },
     specPattern: "cypress/component/**/*.cy.{js,ts,jsx,tsx}",
+    indexHtmlFile: 'cypress/support/component-index.html',
   },
 
   e2e: {
