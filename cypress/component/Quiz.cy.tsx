@@ -1,7 +1,14 @@
-import React from 'react';
 import { mount } from 'cypress/react';
 import Quiz from '../../client/src/components/Quiz';
 import questions from '../fixtures/questions.json';
+
+declare global {
+    namespace Cypress {
+      interface Chainable {
+        getByDataCy(selector: string): Chainable<JQuery<HTMLElement>>;
+      }
+    }
+  }
 
 describe('Quiz Component', () => {
   beforeEach(() => {
